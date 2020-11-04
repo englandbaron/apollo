@@ -1,0 +1,10 @@
+stages:
+- name: ddd
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: rancher/test:123
+      registry: 127.0.0.1:34822
+timeout: 60
+notification: {}
